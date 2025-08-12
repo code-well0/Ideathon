@@ -1,519 +1,503 @@
 /* Basic Reset & Global Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
-  --primary-color: #005a9c;
-  --secondary-color: #e9ecef;
-  --dark-color: #343a40;
-  --light-color: #f8f9fa;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif;
+    --primary-color: #005A9C;
+    --secondary-color: #E9ECEF;
+    --dark-color: #343A40;
+    --light-color: #F8F9FA;
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-family);
-  line-height: 1.6;
-  background-color: #fff;
-  color: var(--dark-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: #fff;
+    color: var(--dark-color);
 }
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 /* Header & Navigation */
 header {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
 }
 
 .logo {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .nav-menu {
-  display: flex;
-  list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 .nav-menu li {
-  margin-left: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 .nav-menu a {
-  text-decoration: none;
-  color: var(--dark-color);
-  font-weight: 500;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
-  color: var(--primary-color);
+    color: var(--primary-color);
 }
 
 /* Buttons */
 .btn {
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-  transition: transform 0.2s ease;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .btn-primary {
-  background-color: var(--primary-color);
-  color: #fff;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 .btn-secondary {
-  background-color: var(--secondary-color);
-  color: var(--dark-color);
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
 }
 
 .nav-buttons .btn {
-  margin-left: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 /* Welcome Message Style (for logged-in state) */
 .welcome-msg {
-  margin-right: 1rem;
-  font-weight: 500;
-  color: var(--dark-color);
+    margin-right: 1rem;
+    font-weight: 500;
+    color: var(--dark-color);
 }
+
 
 /* Hero Section */
 .hero {
-  background-color: var(--light-color);
-  text-align: center;
-  padding: 5rem 0;
+    background-color: var(--light-color);
+    text-align: center;
+    padding: 5rem 0;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
 }
 
 /* General Section Styling */
 .section {
-  padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 .section-light {
-  background-color: var(--light-color);
+    background-color: var(--light-color);
 }
 
 .section-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  color: var(--primary-color);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
 }
 
 /* How It Works Section */
 .steps-container {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2rem;
 }
 
 .step-icon {
-  width: 60px;
-  height: 60px;
-  background-color: var(--primary-color);
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 0 auto 1rem auto;
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0 auto 1rem auto;
 }
 
 .step h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
 }
 
 /* Services Section */
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  justify-content: center;
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .service-card {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
 }
 
 .service-card h3 {
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.services-grid:has(.service-card:nth-last-child(2)) {
-  justify-items: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
 }
 
 /* Testimonials Section */
 .testimonials-grid {
-  display: flex;
-  gap: 2rem;
-  overflow-x: auto;
-  padding: 1rem 0;
-  -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .testimonial-card {
-  background: var(--secondary-color);
-  padding: 1.5rem;
-  border-left: 5px solid var(--primary-color);
-  border-radius: 5px;
-  min-width: 300px;
-  white-space: normal;
+    background: var(--secondary-color);
+    padding: 1.5rem;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
 }
 
 .testimonial-card p {
-  font-style: italic;
-  margin-bottom: 1rem;
+    font-style: italic;
+    margin-bottom: 1rem;
 }
-
 .testimonial-card span {
-  font-weight: bold;
-  color: var(--primary-color);
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 /* Footer */
 footer {
-  background-color: var(--dark-color);
-  color: #fff;
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 2rem;
+    background-color: var(--dark-color);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
 }
 
 /* Login/Register Form Styles */
 .form-group {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .form-group input {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-#register-form,
-#login-form {
-  max-width: 500px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: var(--light-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+#register-form, #login-form {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-#register-form h1,
-#login-form h1 {
-  text-align: center;
-  margin-bottom: 2rem;
+#register-form h1, #login-form h1 {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-#register-form button,
-#login-form button {
-  width: 100%;
-  padding: 0.8rem;
-  font-size: 1.1rem;
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+#register-form button, #login-form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-#register-form button:hover,
-#login-form button:hover {
-  background-color: #004a80;
+#register-form button:hover, #login-form button:hover {
+    background-color: #004a80;
 }
 
 #message {
-  text-align: center;
-  margin-top: 1rem;
-  font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
 }
 
 .form-link {
-  text-align: center;
-  margin-top: 1.5rem;
+    text-align: center;
+    margin-top: 1.5rem;
 }
 
+
 /* Responsive Design */
-@media (max-width: 768px) {
-  .nav-menu,
-  .nav-buttons {
-    display: none; /* Simple hiding for demo; a real site would use a hamburger menu */
-  }
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-  .steps-container {
-    flex-direction: column;
-  }
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
+@media(max-width: 768px) {
+    .nav-menu, .nav-buttons {
+        display: none; /* Simple hiding for demo; a real site would use a hamburger menu */
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .steps-container {
+        flex-direction: column;
+    }
+     .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
 }
 /* Dashboard Table Styles */
 .user-table {
-  width: 100%;
-  border-collapse: collapse; /* Merges cell borders */
-  margin-top: 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    border-collapse: collapse; /* Merges cell borders */
+    margin-top: 2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-.user-table th,
-.user-table td {
-  border: 1px solid #ddd;
-  padding: 12px 15px;
-  text-align: left;
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
 }
 
 .user-table th {
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: bold;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
 }
 
 .user-table tbody tr:nth-child(even) {
-  background-color: var(--light-color); /* Zebra-striping for readability */
+    background-color: var(--light-color); /* Zebra-striping for readability */
 }
 
 .user-table tbody tr:hover {
-  background-color: #e2e6ea; /* Highlight row on hover */
+    background-color: #e2e6ea; /* Highlight row on hover */
 }
-
 /* --- CHATBOT STYLES --- */
 .chatbot-toggler {
-  position: fixed;
-  right: 35px;
-  bottom: 30px;
-  height: 50px;
-  width: 50px;
-  color: #fff;
-  background: #7bb7f7;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: all 0.2s ease;
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background: var(--primary-color);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.2s ease;
 }
 
 body.show-chatbot .chatbot-toggler {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .chatbot-toggler span {
-  position: absolute;
+    position: absolute;
 }
 
 .chatbot-toggler span:last-child,
 body.show-chatbot .chatbot-toggler span:first-child {
-  opacity: 0;
+    opacity: 0;
 }
 
 body.show-chatbot .chatbot-toggler span:last-child {
-  opacity: 1;
+    opacity: 1;
 }
 
 .chatbot-popup {
-  position: fixed;
-  right: 35px;
-  bottom: 95px;
-  width: 420px;
-  background: #fff;
-  border-radius: 15px;
-  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-    0 32px 64px -48px rgba(0, 0, 0, 0.5);
-  transform: scale(0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s ease;
-  transform-origin: bottom right;
+    position: fixed;
+    right: 35px;
+    bottom: 95px;
+    width: 420px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+                0 32px 64px -48px rgba(0,0,0,0.5);
+    transform: scale(0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform-origin: bottom right;
 }
 
 body.show-chatbot .chatbot-popup {
-  transform: scale(1);
-  opacity: 1;
-  pointer-events: auto;
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .chatbot-popup header {
-  background: var(--primary-color);
-  padding: 16px 20px;
-  border-radius: 15px 15px 0 0;
-  text-align: center;
-  color: #fff;
-  position: relative;
+    background: var(--primary-color);
+    padding: 16px 20px;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    color: #fff;
+    position: relative;
 }
 
 .chatbot-popup header h2 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .chatbot-popup header .close-btn {
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  display: none;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
 }
 
 .chatbot-popup .chatbox {
-  height: 420px;
-  overflow-y: auto;
-  padding: 30px 20px 100px;
+    height: 420px;
+    overflow-y: auto;
+    padding: 30px 20px 100px;
 }
 
 .chatbox .chat {
-  display: flex;
-  list-style: none;
+    display: flex;
+    list-style: none;
 }
 
 .chatbox .incoming span {
-  height: 32px;
-  width: 32px;
-  color: #fff;
-  background: var(--primary-color);
-  text-align: center;
-  line-height: 32px;
-  border-radius: 4px;
-  margin: 0 10px 7px 0;
+    height: 32px;
+    width: 32px;
+    color: #fff;
+    background: var(--primary-color);
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    margin: 0 10px 7px 0;
 }
 
 .chatbox .outgoing {
-  margin: 20px 0;
-  justify-content: flex-end;
+    margin: 20px 0;
+    justify-content: flex-end;
 }
 
 .chatbox .chat p {
-  color: #fff;
-  max-width: 75%;
-  font-size: 0.95rem;
-  padding: 12px 16px;
-  border-radius: 10px 10px 0 10px;
-  background: var(--primary-color);
+    color: #fff;
+    max-width: 75%;
+    font-size: 0.95rem;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0 10px;
+    background: var(--primary-color);
 }
 
 .chatbox .incoming p {
-  color: var(--dark-color);
-  background: var(--secondary-color);
-  border-radius: 10px 10px 10px 0;
+    color: var(--dark-color);
+    background: var(--secondary-color);
+    border-radius: 10px 10px 10px 0;
 }
 
 .chatbot-popup .chat-input {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  gap: 5px;
-  background: #fff;
-  padding: 5px 20px;
-  border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    background: #fff;
+    padding: 5px 20px;
+    border-top: 1px solid #ccc;
 }
 
 .chat-input textarea {
-  height: 55px;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 0.95rem;
-  resize: none;
-  padding: 16px 15px 16px 0;
+    height: 55px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    resize: none;
+    padding: 16px 15px 16px 0;
 }
 
 .chat-input span {
-  align-self: flex-end;
-  height: 55px;
-  line-height: 55px;
-  color: var(--primary-color);
-  font-size: 1.35rem;
-  cursor: pointer;
-  visibility: hidden;
+    align-self: flex-end;
+    height: 55px;
+    line-height: 55px;
+    color: var(--primary-color);
+    font-size: 1.35rem;
+    cursor: pointer;
+    visibility: hidden;
 }
 
 .chat-input textarea:valid ~ span {
-  visibility: visible;
+    visibility: visible;
 }
 
 /* Responsive adjustments for chatbot */
-@media (max-width: 490px) {
-  .chatbot-popup {
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
-  }
-  .chatbot-popup .chatbox {
-    height: 90%;
-  }
-  .chatbot-popup header .close-btn {
-    display: block;
-  }
+@media(max-width: 490px) {
+    .chatbot-popup {
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .chatbot-popup .chatbox {
+        height: 90%;
+    }
+    .chatbot-popup header .close-btn {
+        display: block;
+    }
 }
