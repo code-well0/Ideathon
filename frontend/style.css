@@ -517,3 +517,66 @@ body.show-chatbot .chatbot-popup {
     display: block;
   }
 }
+/* Styles for Application Form Container */
+.form-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container .form-description {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.form-container .form-group input[disabled] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.form-container .form-group select,
+.form-container .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--font-family);
+}
+
+.form-container .form-group textarea {
+    resize: vertical;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Styles for Tracking Result Container */
+.tracking-result-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.tracking-result-container h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.tracking-result-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 0.5rem;
+}
