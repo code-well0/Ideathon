@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delhi E-Vyapaar Suvidha Kendra (D-VSK)</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Icons for chatbot -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
 
@@ -30,7 +32,7 @@
                 <h1>Simplifying Business, Accelerating Growth in Delhi.</h1>
                 <p>The official single-window portal for business licenses, compliance, real-time tracking, and government schemes.</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary action-btn">Apply for a New License</button>
+                    <button class="btn btn-primary action-btn">Apply for a D-VSK Smart License</button>
                     <button class="btn btn-secondary action-btn">Track My Application</button>
                 </div>
             </div>
@@ -68,7 +70,7 @@
                 <div class="services-grid">
                     <div class="service-card">
                         <h3>Single-Window System</h3>
-                        <p>Say goodbye to redundant forms and multiple visits. [cite_start]Apply for everything in one place. [cite: 18]</p>
+                        <p>Say goodbye to redundant forms and multiple visits. Apply for everything in one place.</p>
                     </div>
                     <div class="service-card">
                         <h3>Total Transparency</h3>
@@ -76,7 +78,8 @@
                     </div>
                     <div class="service-card">
                         <h3>AI-Powered Assistance</h3>
-                        [cite_start]<p>Our 24/7 "Suvidha-Bot" is here to answer your compliance questions instantly. [cite: 18]</p>
+                        <p>Our 24/7 "Suvidha-Bot" is here to answer your compliance questions instantly.</p>
+
                     </div>
                      <div class="service-card">
                         <h3>Schemes & Incentives Hub</h3>
@@ -89,14 +92,14 @@
         <section id="testimonials" class="container section">
              <h2 class="section-title">From Entrepreneurs Like You</h2>
              <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"The D-VSK portal saved me weeks of running around. I got my factory license approved without ever leaving my office."</p>
-                    <span>- A. Sharma, Manufacturing MSME Owner</span>
-                </div>
                  <div class="testimonial-card">
-                    <p>"As a startup founder, finding the right government schemes was overwhelming. The Schemes Hub on this portal was a game-changer for us."</p>
-                    <span>- Priya Singh, Tech Startup Founder</span>
-                </div>
+                     <p>"The D-VSK portal saved me weeks of running around. I got my factory license approved without ever leaving my office."</p>
+                     <span>- A. Sharma, Manufacturing MSME Owner</span>
+                 </div>
+                  <div class="testimonial-card">
+                     <p>"As a startup founder, finding the right government schemes was overwhelming. The Schemes Hub on this portal was a game-changer for us."</p>
+                     <span>- Priya Singh, Tech Startup Founder</span>
+                 </div>
              </div>
         </section>
 
@@ -108,6 +111,31 @@
         </div>
     </footer>
 
+    <!-- CHATBOT MARKUP START -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">chat</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot-popup">
+        <header>
+            <h2>Suvidha-Bot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">support_agent</span>
+                <p>Hi there 👋<br>How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+    <!-- CHATBOT MARKUP END -->
+
+
     <script src="script.js"></script>
+    <script src="chatbot.js"></script> 
 </body>
 </html>

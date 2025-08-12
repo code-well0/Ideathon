@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - D-VSK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">D-VSK</a>
+            <div class="nav-buttons">
+                <button id="logoutBtn" class="btn btn-primary">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container section">
+            <h1 class="section-title">Registered Users Dashboard</h1>
+            <p style="text-align: center; margin-bottom: 2rem;">A list of all businesses that have registered on the portal.</p>
+            
+            <!-- Table to display users -->
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>Business Name</th>
+                        <th>Contact Email</th>
+                    </tr>
+                </thead>
+                <tbody id="user-list-body">
+                    <!-- User data will be dynamically inserted here by JavaScript -->
+                </tbody>
+            </table>
+             <div style="text-align: center; margin-top: 2rem;">
+                <a href="index.html" class="btn btn-secondary">Back to Home</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Delhi E-Vyapaar Suvidha Kendra | An initiative of Dept. of Industries, Govt. of NCT of Delhi</p>
+        </div>
+    </footer>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
