@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for License - D-VSK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">D-VSK</a>
+            <div class="nav-buttons">
+                <a href="dashboard.html" class="btn btn-secondary">Dashboard</a>
+                <button id="logoutBtn" class="btn btn-primary">Logout</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container section">
+            <h1 class="section-title">D-VSK Smart License Application</h1>
+            <form id="license-form" class="form-container">
+                <p class="form-description">Please fill out the details below to apply for your license. Fields marked with * are required.</p>
+                
+                <div class="form-group">
+                    <label for="businessName">Registered Business Name *</label>
+                    <input type="text" id="businessName" required disabled>
+                </div>
+
+                <div class="form-group">
+                    <label for="businessAddress">Business Address *</label>
+                    <input type="text" id="businessAddress" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="licenseType">Type of License Required *</label>
+                    <select id="licenseType" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="trade">General Trade License</option>
+                        <option value="factory">Factory License</option>
+                        <option value="shop">Shop & Establishment</option>
+                        <option value="fssai">FSSAI Food License</option>
+                        <option value="health">Health Trade License</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="businessDescription">Brief Description of Business Activities *</label>
+                    <textarea id="businessDescription" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="documentUpload">Upload Business Registration Document (PDF) *</label>
+                    <input type="file" id="documentUpload" accept=".pdf" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+                <div id="message" style="margin-top: 1rem;"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Delhi E-Vyapaar Suvidha Kendra | An initiative of Dept. of Industries, Govt. of NCT of Delhi</p>
+        </div>
+    </footer>
+
+    <script src="apply-license.js"></script>
+</body>
+</html>
